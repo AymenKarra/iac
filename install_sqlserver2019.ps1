@@ -3,3 +3,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force ; iex ((New-Object System.Net.W
 
 #install sql server 2019
 choco install sql-server-2019 -y
+#install iis
+Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools
